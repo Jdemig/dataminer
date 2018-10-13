@@ -1,0 +1,31 @@
+{
+  "name": "dataminer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jonathan Emig",
+  "license": "MIT",
+  "scripts": {
+    "webpack": "webpack",
+    "build": "./node_modules/.bin/babel src --out-dir build --watch --source-maps",
+    "start": "./node_modules/.bin/babel src --out-dir build --source-maps && node ./build/index.js"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "url-parse": "^1.4.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.4.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
